@@ -1,0 +1,128 @@
+<style>
+
+/* General styling */
+body {
+  font-family: JasmineUPC;
+  margin: 0;
+  background-color: rgb(229, 125, 174);
+  background-image: url(cq.jpeg);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+sub, sup {
+  font-size: 20px;
+}
+
+/* Header styling */
+.header {
+  margin-left:3px;
+  background-image: url(cq.jpeg);
+  color: rgb(255, 105, 160);
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(106, 11, 74, 0.712);
+  width: 97%;
+  margin-top: 20px;
+}
+
+.header-img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid rgb(253, 164, 196);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  color: rgb(227, 96, 144);
+  text-shadow: 6px 6px 8px rgba(248, 176, 214, 0.752);
+  animation: slide-in 3s ease-in-out infinite alternate;
+}
+
+
+
+/* Animation for the header text */
+@keyframes slide-in {
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+/* Centered Navigation Bar styling */
+.navbarr {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdd1e1;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  border:3px solid rgb(255 132 198)
+  margin: 20px auto;
+  width: 50%;
+  height: auto;
+  gap: 15px; /* Even spacing between buttons */
+}
+
+.nav-btn {
+  background-color: #f664a3;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 80px;
+  text-decoration: none;
+  width: 30%;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    width: 60%;
+    font-family: JasmineUPC;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f664a3;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p {
+  color: rgb(124, 31, 71);
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #a83673;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+.footer {
+  position: sticky;
+   left: 0;
+   bottom: 0;
+  background: linear-gradient(to bottom right, #fbe1eb, #fecade, #cd628b);
+  color: rgb(124, 31, 71);
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  width: 97.5%;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  border-radius: 10px;
+}
+</style>

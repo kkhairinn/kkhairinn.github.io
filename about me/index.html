@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="mystyle.css" type="text/css" rel="stylesheet">
+</head>
+
+<style>
+    /* Form styling */
+    body {
+       background-image:url(cq5.jpg);
+    }
+    form {
+        background-color: #f4e4f4;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    input[type="text"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+    }
+  audio{
+    margin:10px 500px;
+  }
+   
+    /* Error message styling */
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+
+     #clock { 
+        font-size: 30px;           
+        text-align: center; 
+         width: 200px;                   
+         border-radius: 20px;
+
+      .count, .clock {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+      } 
+
+    }
+
+
+</style>
+
+<body> 
+
+    <!-- Header Section -->
+    <div class="header">
+       <a href="khairin.jpg"> <img src="khairin.jpg" alt="My Image" class="header-img"></a> 
+        <h1><b>ABOUT ME</b></h1>
+    </div>
+
+
+    <!-- CLOCK -->
+    <div class="clock">
+      <br><iframe src="https://free.timeanddate.com/clock/i9mmk4y6/n5085/fn4/fs20/fcf664a3/tcfecade/pccd628b/ftb/bas3/bacf664a3/tt0/tw0/tb4" frameborder="0" width="181" height="55"></iframe>  
+    </div>
+
+   <!-- COUNTER --> 
+    <div class="count">
+      <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1260173/t/11"></script>
+    </div>
+
+
+   <!-- AUDIO -->
+   <br><audio controls autoplay class="nav-btn">
+     <source src="valentine.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+   </audio> 
+
+
+    <!-- Navigation Bar -->
+    <div class="navbarr">
+     <div class="p" text-align="center">
+
+        <marquee width="70%" style="padding: 10px 10px;" bgcolor="#f4e4f4" direction="left" scrolldelay="100"><abbr title="hi">Hello!</abbr> Step into the world of my very first webpage<br></marquee> 
+
+            <p>I’m<sup><b> Khairin Nadjwani binti Kamal.</b></sup></p>
+            <p>Currently, I’m pursuing my Diploma in Information Management at UiTM Segamat.</p> 
+            <p>This is my very first website, and I couldn’t be more thrilled to share it with you!</p>
+            <p>Here, you’ll find stories about myself, my gallery, my family, my friends, and much more.</p>
+            <pre><i>Want to know more about me?</i></pre>
+             <p>Before that please just enter your nickname and click the 'SUBMIT' button!<sub> Enjoy exploring!</sub></p>
+        </div>
+
+        <!-- Form Section -->
+        <form id="nameForm" action="biodata.html" onsubmit="return validateForm()">
+            <label for="fname">Your name:</label>
+            <input type="text" id="fname" name="fname" required>
+            
+            <input class="nav-button" type="submit" value="SUBMIT">
+            
+            <!-- Error Message -->
+            <div id="error-message" class="error" style="display: none;">
+                You must insert your name.
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        This design was developed by KHAIRIN NADJWANI
+    </div>
+
+
+</body>
+</html>

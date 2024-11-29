@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY EXPERIENCES</title>
+    <link href="mystyle1.css" type="text/css" rel="stylesheet">
+
+    <style>
+
+        iframe {
+            flex: 1;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(253, 209, 219);
+            border: 5px solid white;
+            border-radius: 40px;
+            box-shadow: 0 4px 8px rgba(106, 11, 74, 0.712);
+        }
+
+        .frame-container {
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+        }
+
+        /* Styling for frames fallback content */
+        .noframes p {
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#ffccdf">
+    <!-- Header Section -->
+    <div class="header">
+        <img src="khairin.jpg" alt="My Image" class="header-img">
+        <h1 class="header-title">ABOUT ME</h1>
+    </div>
+
+    <section>
+        <!-- Navigation Container -->
+        <div class="nav-container">
+            <!-- Left Navigation Bar -->
+            <div class="navbarr">
+                <a href="index.html" class="nav-button">HOME</a>
+                <a href="biodata.html" class="nav-button">BIODATA</a>
+                <a href="education.html" class="nav-button">EDUCATION</a>
+                <a href="#experiences" href="experiences.html" class="nav-button">EXPERIENCES</a>
+                <a href="family.html" class="nav-button">FAMILY & FRIENDS</a>
+                <a href="gallery.html" class="nav-button">GALLERY</a>
+                <a href="socmed.html" class="nav-button">SOCIAL MEDIA</a>
+            </div>
+
+            <!-- Right Navigation Bar -->
+            <div class="navbar">
+               <h2 id="experiences">My Experiences</h2><br>
+               
+               <!-- Flexbox container for the iframes -->
+               <div class="frame-container">
+                   <iframe src="frame1.html" title="Frame 1"></iframe>
+                   <iframe src="frame2.html" title="Frame 2"></iframe>
+               </div>
+
+               <!-- Fallback message for browsers that do not support iframes -->
+               <noscript class="noframes">
+                   <p>Your browser does not support frames. Please update your browser.</p>
+               </noscript>
+           </div>
+        </div>
+    </section>
+     <!-- Footer -->
+    <div class="footer">
+        This design was developed by KHAIRIN NADJWANI
+    </div>
+</body>
+</html>
+</body>
+</html>
